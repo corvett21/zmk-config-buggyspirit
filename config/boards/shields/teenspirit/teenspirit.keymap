@@ -8,9 +8,11 @@
 #define NAV 2
 #define SYM 3
 #define FUN 4
+#define ATW 5
+#define XTR 6
 
 // &lt {
-//     quick_tap_ms = <170>;
+//     quick_tap_ms = <160>;
 // };
 
 &caps_word {
@@ -90,8 +92,8 @@ combo_##NAME { \
         compatible = "zmk,combos";
 /* alphas */
 	             //  0+1    1+2    2+3    3+4    4+5      5+6      6+7
-	COMBOS_TOP_ROW(&kp W, &kp M, &kp B, &kp K, &kp V, &comsem, &dotcol)
-	       COMBOS_BOT_ROW(&kp F, &kp P, &kp J, &kp X, &kp Z)
+//	COMBOS_TOP_ROW(&kp W, &kp M, &kp B, &kp K, &kp V, &comsem, &dotcol)
+//	       COMBOS_BOT_ROW(&kp F, &kp P, &kp J, &kp X, &kp Z)
 	                    //  8+9   9+10  10+11  11+12  12+13
 
 /* usually on base layer */
@@ -208,9 +210,9 @@ combo_##NAME { \
             label = "APT";
 
             bindings = <
-                &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H        &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
-                               &kp C          &kp G          &kp D              &kp L          &kp U          &kp Y
-                                              &my_lt NUM SQT &my_lt NAV SPACE   &my_lt SYM E   &my_lt FUN BSPC
+                &hl LGUI N    &hl LSHIFT R     &hl LALT T     &hl LCTRL S       &hr RCTRL H    &hr LALT A     &hr LSHIFT I     &hr LGUI E
+                               &kp L          &kp D          &kp Y              &kp M          &kp O          &kp U
+                                              &my_lt NUM SQT &my_lt NAV SPACE   &my_lt NAV SPACE   &my_lt FUN BSPC
             >;
         };
         numbers {
@@ -249,6 +251,14 @@ combo_##NAME { \
                                               &trans         &trans             &trans         &trans
             >;
         };
+        alphatwo {
+            label = "ATW";
 
+            bindings = <
+                &kp P		&kp W        &kp B        &kp C       	        &kp F         &kp Z           &kp COMMA         &kp J
+                               	&kp X          &kp V          &kp G              &kp K          &kp Q          &kp PERIOD
+                                              &trans         &trans             &trans         &trans
+            >;
+        };
     };
 };
