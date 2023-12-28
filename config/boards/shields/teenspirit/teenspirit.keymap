@@ -92,6 +92,7 @@ combo_##NAME { \
 //Basics	
 	COMBO(esc, &kp ESC, 8 9)
 	COMBO(tab, &kp TAB, 9 10)
+	COMBO(tab2, &kp TAB, 0 1)
 	COMBO(lenter, &kp ENTER, 8 9 10)
 	COMBO(renter, &kp ENTER, 11 12 13)
 	COMBO(backspace, &kp BSPC, 11 12)
@@ -250,16 +251,16 @@ combo_##NAME { \
             label = "NAV";
 
             bindings = <
-                &none          &kp PG_UP      &kp C_BRI_UP      &kp C_VOL_UP       &kp HOME       &kp UP         &kp END          &kp PSCRN
+                &kp C_MUTE     &kp PG_UP      &kp C_BRI_UP      &kp C_VOL_UP       &kp HOME       &kp UP         &kp END          &kp PSCRN
                                &kp PG_DN      &kp C_BRI_DN      &kp C_VOL_DN       &kp LEFT       &kp DOWN       &kp RIGHT
-                                              &trans            &kp C_MUTE         &trans         &trans
+                                              &trans            &trans		       &trans         &trans
             >;
         };
         symbols {
             label = "SYM";
 
             bindings = <
-                &kp EXCL       &kp AT         &kp HASH       &kp DOLLAR         &kp AMPERSAND  &kp ASTERISK   &kp PERCENT    &kp CARET
+                &kp EXCL       &kp AT         &kp HASH       &kp DOLLAR         &kp AMPERSAND  &kp ASTERISK   &kp PERCENT    &trans
                                &kp GRAVE      &kp DQT        &kp UNDERSCORE     &kp BACKSLASH  &kp PIPE       &kp EQUAL
                                               &kp TILDE      &trans             &trans         &trans
             >;
