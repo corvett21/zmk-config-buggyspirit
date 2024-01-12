@@ -96,6 +96,13 @@ combo_##NAME { \
 	COMBO(fun-toggle2, &mo FUN, 15 16)
 	COMBO(xtra-toggle, &mo SYM, 7 15)
 	COMBO(xtra-toggle2, &mo SYM, 7 16)
+//Home Row Combos
+	COMBO(ca-left, &kp LC(LALT), 2 3)
+	COMBO(cs-left, &kp LC(LSHIFT), 1 3)
+	COMBO(as-left, &kp LS(LALT), 1 2)
+	COMBO(ca-right, &kp RC(RALT), 4 5)
+	COMBO(cs-right, &kp RC(RSHIFT), 4 6)
+	COMBO(as-right, &mp RS(RALT), 5 6)
     };
 };
 
