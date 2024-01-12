@@ -102,7 +102,7 @@ combo_##NAME { \
 	COMBO(as-left, &kp LS(LALT), 1 2)
 	COMBO(ca-right, &kp RC(RALT), 4 5)
 	COMBO(cs-right, &kp RC(RSHIFT), 4 6)
-	COMBO(as-right, &mp RS(RALT), 5 6)
+	COMBO(as-right, &kp RS(RALT), 5 6)
     };
 };
 
