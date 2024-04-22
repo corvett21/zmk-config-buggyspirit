@@ -195,7 +195,7 @@ combo_##NAME { \
             label = "APT";
 
             bindings = <
-                &hl LGUI N    &hl LSHIFT R     &hl LALT T     &hl LCTRL S       &hr RCTRL H    &hr LALT A     &hr LSHIFT I     &hr LGUI E
+                &my_lt NUM N    &hl LSHIFT R     &hl LALT T     &hl LCTRL S       &hr RCTRL H    &hr LALT A     &hr LSHIFT I     &hr LGUI E
                                &kp L          &kp D          &kp Y              &kp M          &kp O          &kp U
                                               &mo ATW	     &mo ATW  		&my_lt NAV SPACE   &my_lt NAV SPACE
             >;
