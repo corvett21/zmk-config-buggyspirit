@@ -59,7 +59,7 @@
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
 combo_##NAME { \
-    timeout-ms = <20>; \
+    timeout-ms = <30>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
 };
@@ -123,7 +123,7 @@ combo_##NAME { \
             // flavor = "tap-preferred";
             flavor = "balanced";
             tapping-term-ms = <150>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <30>; // was 100
             // global-quick-tap;
             bindings = <&kp>, <&kp>;
             // opposite side hand keys
@@ -136,7 +136,7 @@ combo_##NAME { \
             // flavor = "tap-preferred";
             flavor = "balanced";
             tapping-term-ms = <150>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <30>; // was 100
             // global-quick-tap;
             bindings = <&kp>, <&kp>;
             // opposite side hand keys
